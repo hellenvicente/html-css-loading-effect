@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border: 12px solid #cacaca;
+    border-radius: 50%;
+    border-right-color: turquoise;
+    animation: spin 1s ease infinite;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+/* 
+explique o código acima:
+- O seletor `body` define o estilo para o corpo da página, centralizando o conteúdo vertical e horizontalmente.
+- O seletor `.loader` define o estilo para o elemento de carregamento, criando um círculo animado com bordas.
+- A animação `spin` faz o elemento girar 360 graus infinitamente.
+*/
